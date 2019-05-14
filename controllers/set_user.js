@@ -1,7 +1,7 @@
 'use strict';
 
 var response = require('../res');
-var connection = require('../conn');
+var connection = require('.././database/conn');
 
 exports.users = function(req, res) {
     connection.query('SELECT * FROM set_user', function (error, rows, fields){
